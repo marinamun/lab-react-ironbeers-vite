@@ -12,16 +12,14 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<HomePage />}></Route>
-        <Route path='/beers' element={<AllBeersPage />}></Route>
-        <Route path='/random-beer' element={<RandomBeerPage />}></Route>
-        <Route path='/new-beer' element={<AddBeerPage />}></Route>
-        <Route path='/beers/:beerId' element={<BeerDetailsPage />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/beers" element={<AllBeersPage />}></Route>
+        <Route path="/random-beer" element={<RandomBeerPage />}></Route>
+        <Route path="/new-beer" element={<AddBeerPage />}></Route>
+        <Route path="/beers/:beerId" element={<BeerDetailsPage />}></Route>
 
-        <Route path='*' element={<h1>404 Page</h1>}></Route>
+        <Route path="*" element={<h1>404 Page</h1>}></Route>
       </Routes>
-      
-
     </div>
   );
 }
